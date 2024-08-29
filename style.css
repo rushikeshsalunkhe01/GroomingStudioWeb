@@ -1,0 +1,232 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Section 1: Banner */
+#section1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url("/imgs/barbershop-blurred.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 20px; /* Increased padding for a more prominent section */
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.banner-btn a {
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.banner-btn a:hover {
+    background-color: #0056b3;
+}
+
+/* Navigation */
+#navigation {
+    background-color: #007BFF;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#navigation nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+#navigation nav a:hover {
+    color: #f4f4f4;
+}
+
+/* Sections 2, 3, 4 */
+#section2, #section3, #section4 {
+    padding: 60px 20px;
+}
+
+.section2-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card12 {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.card123 {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card123:hover {
+    transform: translateY(-10px);
+}
+
+.card12-icon img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.card12-text p {
+    margin: 10px 0;
+}
+
+/* Service Boxes */
+.service-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.single-box img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Feedback Section */
+.feedback-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feedback-row-col {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info h4 {
+    margin: 0;
+}
+
+/* Footer */
+#footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about-us-img img {
+    width: 50px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.about-us-img img:hover {
+    transform: scale(1.1);
+}
+
+/* Marquee */
+marquee {
+    margin-top: 20px;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+    .flex-container, .service-box, .feedback-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card12, .feedback-row-col {
+        width: 90%;
+    }
+
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 1.2rem;
+    }
+
+    .banner-btn a {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 780px) {
+    .flex-container, .service-box, .feedback-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card12, .feedback-row-col {
+        width: 80%;
+    }
+}
